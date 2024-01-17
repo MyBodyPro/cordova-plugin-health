@@ -485,7 +485,7 @@ public class HealthPlugin extends CordovaPlugin {
 
             double m = distanceDP.getDistance().getMeters();
             obj.put("value", m);
-            obj.put("unit", "meters");
+            obj.put("unit", "m");
           } else if (datapoint instanceof FloorsClimbedRecord) {
             FloorsClimbedRecord climbedDP = (FloorsClimbedRecord) datapoint;
             obj.put("startDate", climbedDP.getStartTime().toEpochMilli());
